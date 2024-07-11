@@ -1,0 +1,14 @@
+#searchResults {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+#searchResults li {
+    padding: 5px;
+    cursor: pointer;
+}
+#searchResults li:hover, #searchResults li.selectedResult {
+    background-color: #f0f0f0;
+}
