@@ -42,6 +42,15 @@ $(document).ready(function(){
                 selectedResult.removeClass("selectedResult").next().addClass("selectedResult")
             }
         }
+        else if(keyboard.key === "ArrowUp"){
+            keyboard.preventDefault();
+            if(selectedResult.length === 0){
+                results.last().addClass("selectedResult")
+            }
+            else if (selectedResult.prev().length > 0){
+                selectedResult.removeClass("selectedResult").prev().addClass("selectedResult")
+            }
+        }
         else if(keyboard.key === "Enter"){
             if(selectedResult.length > 0){
                 $(this).val(selectedResult.text());
