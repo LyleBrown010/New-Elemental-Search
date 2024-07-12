@@ -66,7 +66,7 @@ $(document).ready(function(){
     });
 
     // close results when clicking outside the results tab
-    $(document).on("click", function(close){ //attach to doc so that function executes on whole doc, not one section
+    $(document).on("click", function(close){ //attach to doc so that function executes on whole doc, not one sectionnn
         if(!$(close.target).closest("#searchMain", "#searchResults").length){
             $("#searchResults").hide();
         }
