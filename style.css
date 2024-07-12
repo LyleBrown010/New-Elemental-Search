@@ -1,14 +1,35 @@
-#searchResults {
-    display: none;
+*{
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#searchMain{
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#searchResults {
+    display: none;
     border: 1px solid #ccc;
+    width: 20%;
+    padding: 5px;
 }
 #searchResults li {
     padding: 5px;
     cursor: pointer;
 }
 #searchResults li:hover, #searchResults li.selectedResult {
-    background-color: #f0f0f0;
+    background-color: gray;
 }
