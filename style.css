@@ -12,8 +12,9 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 25px;
-    height: 100vh;
-    background-color: #68784e;
+    /* height: 100vh; */
+    height: auto;
+    /* background-color: #68784e; */
 }
 
 #searchMain{

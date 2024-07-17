@@ -34,7 +34,6 @@ $(document).ready(function(){
         let selectedResult = results.filter(".selectedResult"); //filters through results to find the class 
 
         if(keyboard.key === "ArrowDown"){
-            // keyboard.preventDefault(); // prevent scrolling
             if(selectedResult.length === 0){ 
                 results.first().addClass("selectedResult") //no item selected takes first item and adds a class
             }
@@ -43,7 +42,6 @@ $(document).ready(function(){
             }
         }
         else if(keyboard.key === "ArrowUp"){
-            // keyboard.preventDefault(); //prevent scrolling
             if(selectedResult.length === 0){
                 results.last().addClass("selectedResult") //none selected, takes first item
             }
