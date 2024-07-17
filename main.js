@@ -30,11 +30,11 @@ $(document).ready(function(){
     }
     // keyboard nav 
     $("#searchMain").on("keydown", function(keyboard){
-        let results = $("#searchResults li"); //gets lists items from search
+        let results = $("#searchResults li"); //targets lists items from search
         let selectedResult = results.filter(".selectedResult"); //filters through results to find the class 
 
         if(keyboard.key === "ArrowDown"){
-            keyboard.preventDefault(); // prevent scrolling
+            // keyboard.preventDefault(); // prevent scrolling
             if(selectedResult.length === 0){ 
                 results.first().addClass("selectedResult") //no item selected takes first item and adds a class
             }
@@ -43,7 +43,7 @@ $(document).ready(function(){
             }
         }
         else if(keyboard.key === "ArrowUp"){
-            keyboard.preventDefault(); //prevent scrolling
+            // keyboard.preventDefault(); //prevent scrolling
             if(selectedResult.length === 0){
                 results.last().addClass("selectedResult") //none selected, takes first item
             }

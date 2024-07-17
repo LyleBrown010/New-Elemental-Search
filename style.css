@@ -2,6 +2,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
 
 #container{
@@ -10,7 +11,9 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 25px;
+    padding-bottom: 25px;
+    height: 100vh;
+    background-color: #68784e;
 }
 
 #searchMain{
@@ -18,6 +21,8 @@
     height: 30px;
     font-size: 20px;
     padding: 5px;
+    background-color: blanchedalmond !important;
+    box-sizing: border-box;
 }
 
 #searchResults {
@@ -25,6 +30,8 @@
     border: 1px solid #ccc;
     width: 20%;
     padding: 5px;
+    background-color: blanchedalmond !important;
+    box-sizing: border-box;
 }
 #searchResults li {
     padding: 5px;
